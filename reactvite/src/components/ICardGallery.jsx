@@ -3,13 +3,44 @@ import ICard from './ICard'
 import studentimage from '../images/studentimage.jpg'
 function ICardGallery() {
 
-    const student={
-        pic:{studentimage},
+    const student=
+    [
+    {
+        pic:studentimage,
         roll:"787878",
         name:"Rahul Kumar",
         branch:"CSE",
         college:"ABES Engineering College"
+    },
+    {
+        pic:{studentimage},
+        roll:"8989000",
+        name:"Manish Kumar",
+        branch:"CSE",
+        college:"ABES Engineering College"
+    },
+    {
+        pic:{studentimage},
+        roll:"125656",
+        name:"Sanjay Tomer",
+        branch:"CSE-AIML",
+        college:"ABES Engineering College"
+    },
+    {
+        pic:{studentimage},
+        roll:"54329",
+        name:"Pankaj Kumar",
+        branch:"CSE-DS",
+        college:"ABES Engineering College"
+    },
+    {
+        pic:{studentimage},
+        roll:"78431",
+        name:"Alka Singh",
+        branch:"CSE",
+        college:"ABES Engineering College"
     }
+  ]
 
 
   return (
@@ -18,7 +49,14 @@ function ICardGallery() {
 <ICard roll="34365" name="Rahul" branch="CSE" college="ABES Engineering College" />
 <ICard roll="876788" name="Amit Tomer" branch="CSE" college="ABES Engineering College" /> */}
    
-  <ICard data={student} /> 
+  {/* <ICard data={student[1]} />  */}
+
+  {
+    student.map((ele)=>(
+      <ICard data={ele} />
+
+    ))
+  }
    
     </div>
   )

@@ -5,15 +5,15 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import ICard from './components/ICard'
 import ICardGallery from './components/ICardGallery'
+import StateHandling from './components/StateHandling'
 
 function App() {
  
-
   return (
     <div>
-   <ICardGallery />
+   {/* <ICardGallery /> */}
 
-    
+    <StateHandling />
     </div>
   )
 }
